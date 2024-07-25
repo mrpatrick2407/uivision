@@ -1,0 +1,127 @@
+{
+  "Name": "NewTab",
+  "CreationDate": "2024-7-25",
+  "Commands": [
+    {
+      "Command": "store",
+      "Target": "0",
+      "Value": "retryCounter",
+      "Description": ""
+    },
+    {
+      "Command": "store",
+      "Target": "3",
+      "Value": "maxRetries",
+      "Description": ""
+    },
+    {
+      "Command": "onError",
+      "Target": "#goto",
+      "Value": "mycatch",
+      "Description": ""
+    },
+    {
+      "Command": "label",
+      "Target": "start",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "open",
+      "Target": "https://demoqa.com/browser-windows",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=tabButton",
+      "Value": "",
+      "Targets": [
+        "id=tabButton",
+        "xpath=//*[@id=\"tabButton\"]",
+        "xpath=//button[@id='tabButton']",
+        "xpath=//div/button",
+        "css=#tabButton"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "selectWindow",
+      "Target": "tab=1",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "storeText",
+      "Target": "//*[@id=\"sampleHeading\"]",
+      "Value": "Text",
+      "Description": ""
+    },
+    {
+      "Command": "assert",
+      "Target": "Text",
+      "Value": "This is a sample page",
+      "Description": ""
+    },
+    {
+      "Command": "prompt",
+      "Target": "${Text}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "label",
+      "Target": "all_ok",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "All steps completed successfully.",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "gotoLabel",
+      "Target": "end",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "label",
+      "Target": "mycatch",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "executeScript_Sandbox",
+      "Target": "return parseInt(${retryCounter}) + 1",
+      "Value": "retryCounter",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "Attempt ${retryCounter} failed. Retrying...",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "gotoIf_v2",
+      "Target": "${retryCounter} <= ${maxRetries}",
+      "Value": "start",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "Retry limit reached. Exiting.",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "label",
+      "Target": "end",
+      "Value": "",
+      "Description": ""
+    }
+  ]
+}

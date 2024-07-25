@@ -1,0 +1,256 @@
+{
+  "Name": "OrangeHRMComment",
+  "CreationDate": "2024-7-25",
+  "Commands": [
+    {
+      "Command": "store",
+      "Target": "0",
+      "Value": "retryCounter",
+      "Description": ""
+    },
+    {
+      "Command": "store",
+      "Target": "3",
+      "Value": "maxRetries",
+      "Description": ""
+    },
+    {
+      "Command": "onError",
+      "Target": "#goto",
+      "Value": "mycatch",
+      "Description": ""
+    },
+    {
+      "Command": "open",
+      "Target": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "name=username",
+      "Value": "Admin",
+      "Targets": [
+        "name=username",
+        "xpath=//*[@id=\"app\"]/div/div/div/div/div[2]/div[2]/form/div/div/div[2]/input",
+        "xpath=//input[@name='username']",
+        "xpath=//div[2]/input",
+        "css=#app > div.orangehrm-login-layout > div > div.orangehrm-login-container > div > div.orangehrm-login-slot > div.orangehrm-login-form > form > div:nth-child(2) > div > div:nth-child(2) > input"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "name=password",
+      "Value": "",
+      "Targets": [
+        "name=password",
+        "xpath=//*[@id=\"app\"]/div/div/div/div/div[2]/div[2]/form/div[2]/div/div[2]/input",
+        "xpath=//input[@name='password']",
+        "xpath=//div[2]/div/div[2]/input",
+        "css=#app > div.orangehrm-login-layout > div > div.orangehrm-login-container > div > div.orangehrm-login-slot > div.orangehrm-login-form > form > div:nth-child(3) > div > div:nth-child(2) > input"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "name=password",
+      "Value": "admin123",
+      "Targets": [
+        "name=password",
+        "xpath=//*[@id=\"app\"]/div/div/div/div/div[2]/div[2]/form/div[2]/div/div[2]/input",
+        "xpath=//input[@name='password']",
+        "xpath=//div[2]/div/div[2]/input",
+        "css=#app > div.orangehrm-login-layout > div > div.orangehrm-login-container > div > div.orangehrm-login-slot > div.orangehrm-login-form > form > div:nth-child(3) > div > div:nth-child(2) > input"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "xpath=//*[@id=\"app\"]/div/div/div/div/div[2]/div[2]/form/div[3]/button",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"app\"]/div/div/div/div/div[2]/div[2]/form/div[3]/button",
+        "xpath=//button[@type='submit']",
+        "xpath=//button",
+        "css=#app > div.orangehrm-login-layout > div > div.orangehrm-login-container > div > div.orangehrm-login-slot > div.orangehrm-login-form > form > div.oxd-form-actions.orangehrm-login-action > button"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "label",
+      "Target": "start",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "linkText=Buzz",
+      "Value": "",
+      "Targets": [
+        "linkText=Buzz",
+        "xpath=//*[@id=\"app\"]/div/div/aside/nav/div[2]/ul/li[12]/a",
+        "xpath=//li[12]/a",
+        "css=#app > div.oxd-layout > div.oxd-layout-navigation > aside > nav > div.oxd-sidepanel-body > ul > li:nth-child(12) > a"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"app\"]/div/div[2]/div[2]/div/div/div/div/div/div[2]/form/div/textarea",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"app\"]/div/div[2]/div[2]/div/div/div/div/div/div[2]/form/div/textarea",
+        "xpath=//textarea",
+        "css=#app > div.oxd-layout > div.oxd-layout-container > div.oxd-layout-context > div > div:nth-child(1) > div > div.oxd-sheet.oxd-sheet--rounded.oxd-sheet--gutters.oxd-sheet--white.orangehrm-buzz-create-post > div.orangehrm-buzz-create-post-header > div.orangehrm-buzz-create-post-header-text > form > div > textarea"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "xpath=//*[@id=\"app\"]/div/div[2]/div[2]/div/div/div/div/div/div[2]/form/div/textarea",
+      "Value": "Visual Testing Command",
+      "Targets": [
+        "xpath=//*[@id=\"app\"]/div/div[2]/div[2]/div/div/div/div/div/div[2]/form/div/textarea",
+        "xpath=//textarea",
+        "css=#app > div.oxd-layout > div.oxd-layout-container > div.oxd-layout-context > div > div:nth-child(1) > div > div.oxd-sheet.oxd-sheet--rounded.oxd-sheet--gutters.oxd-sheet--white.orangehrm-buzz-create-post > div.orangehrm-buzz-create-post-header > div.orangehrm-buzz-create-post-header-text > form > div > textarea"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//button[contains(text(),' Post ']",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"app\"]/div/div[2]/div[2]/div/div/div/div/div/div[2]/form/div/div/button",
+        "xpath=//button[@type='submit']",
+        "xpath=//form/div/div/button",
+        "css=#app > div.oxd-layout > div.oxd-layout-container > div.oxd-layout-context > div > div:nth-child(1) > div > div.oxd-sheet.oxd-sheet--rounded.oxd-sheet--gutters.oxd-sheet--white.orangehrm-buzz-create-post > div.orangehrm-buzz-create-post-header > div.orangehrm-buzz-create-post-header-text > form > div > div > button"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "//*[@id=\"Buzz Newsfeed\"]/div/div[3]/div[1]//i[@class='bi-chat-text-fill']",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"app\"]/div/div[2]/div[2]/div/div/div/div[3]/div/div/div[3]/div/button/i",
+        "xpath=//div[3]/div/button/i",
+        "css=#app > div.oxd-layout > div.oxd-layout-container > div.oxd-layout-context > div > div:nth-child(1) > div > div.oxd-grid-1.orangehrm-buzz-newsfeed-posts > div:nth-child(1) > div > div.orangehrm-buzz-post-footer > div.orangehrm-buzz-post-actions > button:nth-child(2) > i"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"app\"]/div/div[2]/div[2]/div/div/div/div[3]/div/div/div[4]/div/form/div/div[2]/input",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"app\"]/div/div[2]/div[2]/div/div/div/div[3]/div/div/div[4]/div/form/div/div[2]/input",
+        "xpath=//div[2]/input",
+        "css=#app > div.oxd-layout > div.oxd-layout-container > div.oxd-layout-context > div > div:nth-child(1) > div > div.oxd-grid-1.orangehrm-buzz-newsfeed-posts > div:nth-child(1) > div > div.orangehrm-buzz-comment > div > form > div > div:nth-child(2) > input"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "xpath=//*[@id=\"app\"]/div/div[2]/div[2]/div/div/div/div[3]/div/div/div[4]/div/form/div/div[2]/input",
+      "Value": "Checking like Visual Testing",
+      "Targets": [
+        "xpath=//*[@id=\"app\"]/div/div[2]/div[2]/div/div/div/div[3]/div/div/div[4]/div/form/div/div[2]/input",
+        "xpath=//div[2]/input",
+        "css=#app > div.oxd-layout > div.oxd-layout-container > div.oxd-layout-context > div > div:nth-child(1) > div > div.oxd-grid-1.orangehrm-buzz-newsfeed-posts > div:nth-child(1) > div > div.orangehrm-buzz-comment > div > form > div > div:nth-child(2) > input"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_ENTER}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "xpath=//p[contains(@class, 'orangehrm-post-comment-action') and text()='Like']",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "visualAssert",
+      "Target": "rzz1gr_dpi_120.png",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XMove",
+      "Target": "edw6gz_dpi_120.png",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "visualGetPixelColor",
+      "Target": "${!imageX}, ${!imageY}",
+      "Value": "color",
+      "Description": ""
+    },
+    {
+      "Command": "prompt",
+      "Target": "${color}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "label",
+      "Target": "all_ok",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "All steps completed successfully.",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "gotoLabel",
+      "Target": "end",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "label",
+      "Target": "mycatch",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "executeScript_Sandbox",
+      "Target": "return parseInt(${retryCounter}) + 1",
+      "Value": "retryCounter",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "Attempt ${retryCounter} failed. Retrying...",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "gotoIf_v2",
+      "Target": "${retryCounter} <= ${maxRetries}",
+      "Value": "start",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "Retry limit reached. Exiting.",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "label",
+      "Target": "end",
+      "Value": "",
+      "Description": ""
+    }
+  ]
+}

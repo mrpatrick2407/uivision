@@ -1,0 +1,67 @@
+{
+  "Name": "Prompt",
+  "CreationDate": "2024-7-25",
+  "Commands": [
+    {
+      "Command": "open",
+      "Target": "https://demoqa.com/alerts",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "store",
+      "Target": "Test",
+      "Value": "input",
+      "Description": ""
+    },
+    {
+      "Command": "answerOnNextPrompt",
+      "Target": "${input}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=promtButton",
+      "Value": "",
+      "Targets": [
+        "id=promtButton",
+        "xpath=//*[@id=\"promtButton\"]",
+        "xpath=//button[@id='promtButton']",
+        "xpath=//div[4]/div[2]/button",
+        "css=#promtButton"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "storeText",
+      "Target": "id=promptResult",
+      "Value": "test",
+      "Description": ""
+    },
+    {
+      "Command": "executeScript_Sandbox",
+      "Target": "return ${test}.substring(${test}.length,${test}.length-(${input}.length+1)).trim()",
+      "Value": "result",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "${result}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "${input}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "assert",
+      "Target": "result",
+      "Value": "${input}",
+      "Description": ""
+    }
+  ]
+}

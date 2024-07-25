@@ -1,0 +1,127 @@
+{
+  "Name": "NewWindowMessage",
+  "CreationDate": "2024-7-25",
+  "Commands": [
+    {
+      "Command": "store",
+      "Target": "0",
+      "Value": "retryCounter",
+      "Description": ""
+    },
+    {
+      "Command": "store",
+      "Target": "3",
+      "Value": "maxRetries",
+      "Description": ""
+    },
+    {
+      "Command": "onError",
+      "Target": "#goto",
+      "Value": "mycatch",
+      "Description": ""
+    },
+    {
+      "Command": "label",
+      "Target": "start",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "open",
+      "Target": "https://demoqa.com/browser-windows",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=messageWindowButton",
+      "Value": "",
+      "Targets": [
+        "id=messageWindowButton",
+        "xpath=//*[@id=\"messageWindowButton\"]",
+        "xpath=//button[@id='messageWindowButton']",
+        "xpath=//div[3]/button",
+        "css=#messageWindowButton"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "selectWindow",
+      "Target": "title=about:blank",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "storeText",
+      "Target": "//body",
+      "Value": "Text",
+      "Description": ""
+    },
+    {
+      "Command": "assert",
+      "Target": "Text",
+      "Value": "Knowledge increases by sharing but not by saving. Please share this website with your friends and in your organization.",
+      "Description": ""
+    },
+    {
+      "Command": "prompt",
+      "Target": "${Text}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "label",
+      "Target": "all_ok",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "All steps completed successfully.",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "gotoLabel",
+      "Target": "end",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "label",
+      "Target": "mycatch",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "executeScript_Sandbox",
+      "Target": "return parseInt(${retryCounter}) + 1",
+      "Value": "retryCounter",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "Attempt ${retryCounter} failed. Retrying...",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "gotoIf_v2",
+      "Target": "${retryCounter} <= ${maxRetries}",
+      "Value": "start",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "Retry limit reached. Exiting.",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "label",
+      "Target": "end",
+      "Value": "",
+      "Description": ""
+    }
+  ]
+}

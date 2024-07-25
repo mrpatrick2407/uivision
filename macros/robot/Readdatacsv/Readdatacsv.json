@@ -1,0 +1,42 @@
+{
+  "Name": "Readdatacsv",
+  "CreationDate": "2024-7-25",
+  "Commands": [
+    {
+      "Command": "csvReadArray",
+      "Target": "readcsvtestdata.csv",
+      "Value": "myVal",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "${myVal[0][1]}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "executeScript_Sandbox",
+      "Target": "return JSON.parse('{ \"name\": \"John Doe\", \"age\": 30, \"city\": \"New York\" }');",
+      "Value": "jsonData",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "${jsonData.name}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "${jsonData.age}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "${jsonData.city}",
+      "Value": "",
+      "Description": ""
+    }
+  ]
+}

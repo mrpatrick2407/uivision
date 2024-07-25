@@ -1,0 +1,24 @@
+{
+  "Name": "Confirm",
+  "CreationDate": "2024-7-25",
+  "Commands": [
+    {
+      "Command": "open",
+      "Target": "https://demoqa.com/alerts",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=confirmButton",
+      "Value": "Cancel",
+      "Description": ""
+    },
+    {
+      "Command": "assertConfirmation",
+      "Target": "Do you confirm action?",
+      "Value": "",
+      "Description": ""
+    }
+  ]
+}

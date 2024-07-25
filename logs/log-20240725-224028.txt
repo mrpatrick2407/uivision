@@ -1,0 +1,35 @@
+2024-07-25T17:25:32.939Z - [status] Playing macro robot\NewWindow\NewWindow.json
+2024-07-25T17:25:33.005Z - [info] Executing:  | store | 0 | retryCounter | 
+2024-07-25T17:25:33.063Z - [info] Executing:  | store | 3 | maxRetries | 
+2024-07-25T17:25:33.109Z - [info] Executing:  | onError | #goto | mycatch | 
+2024-07-25T17:25:33.176Z - [info] Executing:  | label | start |  | 
+2024-07-25T17:25:33.217Z - [info] Executing:  | open | https://demoqa.com/browser-windows |  | 
+2024-07-25T17:25:35.922Z - [info] Executing:  | click | id=windowButton |  | 
+2024-07-25T17:25:36.886Z - [info] Executing:  | selectWindow | title=demoqa.com/sample |  | 
+2024-07-25T17:25:36.954Z - [info] Executing:  | storeText | //*[@id="sampleHeading"] | Text | 
+2024-07-25T17:25:37.033Z - [info] Executing:  | assert | Text | This is a sample page | 
+2024-07-25T17:25:37.063Z - [info] Executing:  | prompt | ${Text} |  | 
+2024-07-25T17:25:39.419Z - [info] Executing:  | label | all_ok |  | 
+2024-07-25T17:25:39.488Z - [info] Executing:  | echo | All steps completed successfully. |  | 
+2024-07-25T17:25:39.510Z - [echo] All steps completed successfully.
+2024-07-25T17:25:39.562Z - [info] Executing:  | gotoLabel | end |  | 
+2024-07-25T17:25:39.638Z - [info] Executing:  | label | end |  | 
+2024-07-25T17:25:39.714Z - [info] Macro completed (Runtime 6.71s)
+2024-07-25T17:25:42.409Z - [warning] Invalid value for cmd line arg: "closeBrowser" should be 0, 1, true or false, but now it's 
+2024-07-25T17:25:43.679Z - [status] Playing macro robot\NewWindow\NewTab.json
+2024-07-25T17:25:43.751Z - [info] Executing:  | store | 0 | retryCounter | 
+2024-07-25T17:25:43.798Z - [info] Executing:  | store | 3 | maxRetries | 
+2024-07-25T17:25:43.870Z - [info] Executing:  | onError | #goto | mycatch | 
+2024-07-25T17:25:43.925Z - [info] Executing:  | label | start |  | 
+2024-07-25T17:25:43.972Z - [info] Executing:  | open | https://demoqa.com/browser-windows |  | 
+2024-07-25T17:25:46.659Z - [info] Executing:  | click | id=tabButton |  | 
+2024-07-25T17:25:47.456Z - [info] Executing:  | selectWindow | tab=1 |  | 
+2024-07-25T17:25:47.536Z - [info] Executing:  | storeText | //*[@id="sampleHeading"] | Text | 
+2024-07-25T17:25:47.628Z - [info] Executing:  | assert | Text | This is a sample page | 
+2024-07-25T17:25:47.675Z - [info] Executing:  | prompt | ${Text} |  | 
+2024-07-25T17:25:49.229Z - [info] Executing:  | label | all_ok |  | 
+2024-07-25T17:25:49.311Z - [info] Executing:  | echo | All steps completed successfully. |  | 
+2024-07-25T17:25:49.352Z - [echo] All steps completed successfully.
+2024-07-25T17:25:49.418Z - [info] Executing:  | gotoLabel | end |  | 
+2024-07-25T17:25:49.461Z - [info] Executing:  | label | end |  | 
+2024-07-25T17:25:49.497Z - [info] Macro completed (Runtime 5.75s)

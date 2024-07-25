@@ -1,0 +1,16 @@
+{
+  "Name": "part2",
+  "CreationDate": "2020-9-11",
+  "Commands": [
+    {
+      "Command": "bringBrowserToForeground",
+      "Target": "",
+      "Value": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=Email",
+      "Value": "from (filled by 2nd macro)"
+    }
+  ]
+}

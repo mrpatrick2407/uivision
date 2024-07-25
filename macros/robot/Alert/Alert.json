@@ -1,0 +1,31 @@
+{
+  "Name": "Alert",
+  "CreationDate": "2024-7-25",
+  "Commands": [
+    {
+      "Command": "open",
+      "Target": "https://demoqa.com/alerts",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "id=alertButton",
+      "Value": "",
+      "Targets": [
+        "id=alertButton",
+        "xpath=//*[@id=\"alertButton\"]",
+        "xpath=//button[@id='alertButton']",
+        "xpath=//div[2]/button",
+        "css=#alertButton"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "assertAlert",
+      "Target": "You clicked a button",
+      "Value": "",
+      "Description": ""
+    }
+  ]
+}

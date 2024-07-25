@@ -1,0 +1,411 @@
+{
+  "Name": "DemoQA-Forms",
+  "CreationDate": "2024-7-25",
+  "Commands": [
+    {
+      "Command": "store",
+      "Target": "0",
+      "Value": "retryCounter",
+      "Description": ""
+    },
+    {
+      "Command": "store",
+      "Target": "3",
+      "Value": "maxRetries",
+      "Description": ""
+    },
+    {
+      "Command": "onError",
+      "Target": "#goto",
+      "Value": "mycatch",
+      "Description": ""
+    },
+    {
+      "Command": "label",
+      "Target": "start",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "open",
+      "Target": "https://demoqa.com/automation-practice-form",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=firstName",
+      "Value": "",
+      "Targets": [
+        "id=firstName",
+        "xpath=//*[@id=\"firstName\"]",
+        "xpath=//input[@id='firstName']",
+        "xpath=//input",
+        "css=#firstName"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=firstName",
+      "Value": "Test",
+      "Targets": [
+        "id=firstName",
+        "xpath=//*[@id=\"firstName\"]",
+        "xpath=//input[@id='firstName']",
+        "xpath=//input",
+        "css=#firstName"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=lastName",
+      "Value": "",
+      "Targets": [
+        "id=lastName",
+        "xpath=//*[@id=\"lastName\"]",
+        "xpath=//input[@id='lastName']",
+        "xpath=//div[4]/input",
+        "css=#lastName"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=lastName",
+      "Value": "Last",
+      "Targets": [
+        "id=lastName",
+        "xpath=//*[@id=\"lastName\"]",
+        "xpath=//input[@id='lastName']",
+        "xpath=//div[4]/input",
+        "css=#lastName"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=userEmail",
+      "Value": "",
+      "Targets": [
+        "id=userEmail",
+        "xpath=//*[@id=\"userEmail\"]",
+        "xpath=//input[@id='userEmail']",
+        "xpath=//div[2]/div[2]/input",
+        "css=#userEmail"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=userEmail",
+      "Value": "theo@example.com",
+      "Targets": [
+        "id=userEmail",
+        "xpath=//*[@id=\"userEmail\"]",
+        "xpath=//input[@id='userEmail']",
+        "xpath=//div[2]/div[2]/input",
+        "css=#userEmail"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=gender-radio-1",
+      "Value": "Male",
+      "Targets": [
+        "id=gender-radio-1",
+        "name=gender",
+        "xpath=//*[@id=\"gender-radio-1\"]",
+        "xpath=//input[@id='gender-radio-1']",
+        "xpath=//div[3]/div[2]/div/input",
+        "css=#gender-radio-1"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"genterWrapper\"]/div[2]/div/label",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"genterWrapper\"]/div[2]/div/label",
+        "xpath=//div[3]/div[2]/div/label",
+        "css=#genterWrapper > div.col-md-9.col-sm-12 > div:nth-child(1) > label"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=gender-radio-1",
+      "Value": "",
+      "Targets": [
+        "id=gender-radio-1",
+        "name=gender",
+        "xpath=//*[@id=\"gender-radio-1\"]",
+        "xpath=//input[@id='gender-radio-1']",
+        "xpath=//div[3]/div[2]/div/input",
+        "css=#gender-radio-1"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=userNumber",
+      "Value": "",
+      "Targets": [
+        "id=userNumber",
+        "xpath=//*[@id=\"userNumber\"]",
+        "xpath=//input[@id='userNumber']",
+        "xpath=//div[4]/div[2]/input",
+        "css=#userNumber"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=userNumber",
+      "Value": "1243397112",
+      "Targets": [
+        "id=userNumber",
+        "xpath=//*[@id=\"userNumber\"]",
+        "xpath=//input[@id='userNumber']",
+        "xpath=//div[4]/div[2]/input",
+        "css=#userNumber"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=dateOfBirthInput",
+      "Value": "24 Jul 2003",
+      "Targets": [
+        "id=userNumber",
+        "xpath=//*[@id=\"userNumber\"]",
+        "xpath=//input[@id='userNumber']",
+        "xpath=//div[4]/div[2]/input",
+        "css=#userNumber"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"subjectsContainer\"]/div/div",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"subjectsContainer\"]/div/div",
+        "xpath=//div[6]/div[2]/div/div/div",
+        "css=#subjectsContainer > div > div.subjects-auto-complete__value-container.subjects-auto-complete__value-container--is-multi.css-1hwfws3"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "xpath=//*[@id=\"subjectsInput\"]",
+      "Value": "Math",
+      "Targets": [
+        "xpath=//*[@id=\"subjectsContainer\"]/div/div",
+        "xpath=//div[6]/div[2]/div/div/div",
+        "css=#subjectsContainer > div > div.subjects-auto-complete__value-container.subjects-auto-complete__value-container--is-multi.css-1hwfws3"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=react-select-2-option-0",
+      "Value": "",
+      "Targets": [
+        "id=react-select-2-option-0",
+        "xpath=//*[@id=\"react-select-2-option-0\"]",
+        "xpath=//div[@id='react-select-2-option-0']",
+        "xpath=//div[2]/div/div[2]/div/div",
+        "css=#react-select-2-option-0"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=hobbies-checkbox-1",
+      "Value": "",
+      "Targets": [
+        "id=hobbies-checkbox-1",
+        "xpath=//*[@id=\"hobbies-checkbox-1\"]",
+        "xpath=//input[@id='hobbies-checkbox-1']",
+        "xpath=//div[7]/div[2]/div/input",
+        "css=#hobbies-checkbox-1"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=uploadPicture",
+      "Value": "",
+      "Targets": [
+        "id=uploadPicture",
+        "xpath=//*[@id=\"uploadPicture\"]",
+        "xpath=//input[@id='uploadPicture']",
+        "xpath=//div[8]/div[2]/div/input",
+        "css=#uploadPicture"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=uploadPicture",
+      "Value": "C:\\Users\\rtheophilus\\Downloads\\images.jpg",
+      "Targets": [
+        "id=uploadPicture",
+        "xpath=//*[@id=\"uploadPicture\"]",
+        "xpath=//input[@id='uploadPicture']",
+        "xpath=//div[8]/div[2]/div/input",
+        "css=#uploadPicture"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=currentAddress",
+      "Value": "",
+      "Targets": [
+        "id=currentAddress",
+        "xpath=//*[@id=\"currentAddress\"]",
+        "xpath=//textarea[@id='currentAddress']",
+        "xpath=//textarea",
+        "css=#currentAddress"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=currentAddress",
+      "Value": "No 38 test street",
+      "Targets": [
+        "id=currentAddress",
+        "xpath=//*[@id=\"currentAddress\"]",
+        "xpath=//textarea[@id='currentAddress']",
+        "xpath=//textarea",
+        "css=#currentAddress"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_ESC}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=react-select-3-input",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"state\"]/div/div[2]/div/svg",
+        "css=#state > div.css-1pahdxg-control > div.css-1wy0on6 > div > svg"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=react-select-3-option-1",
+      "Value": "",
+      "Targets": [
+        "id=react-select-3-option-1",
+        "xpath=//*[@id=\"react-select-3-option-1\"]",
+        "xpath=//div[@id='react-select-3-option-1']",
+        "xpath=//div[2]/div/div[2]/div/div",
+        "css=#react-select-3-option-1"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=react-select-4-input",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"city\"]/div/div[2]/div/svg",
+        "css=#city > div.css-1pahdxg-control > div.css-1wy0on6 > div > svg"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=react-select-4-option-1",
+      "Value": "",
+      "Targets": [
+        "id=react-select-4-option-0",
+        "xpath=//*[@id=\"react-select-4-option-0\"]",
+        "xpath=//div[@id='react-select-4-option-0']",
+        "xpath=//div[3]/div/div[2]/div/div",
+        "css=#react-select-4-option-0"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=submit",
+      "Value": "",
+      "Targets": [
+        "id=submit",
+        "xpath=//*[@id=\"submit\"]",
+        "xpath=//button[@id='submit']",
+        "xpath=//div/button",
+        "css=#submit"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "label",
+      "Target": "all_ok",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "All steps completed successfully.",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "gotoLabel",
+      "Target": "end",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "label",
+      "Target": "mycatch",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "executeScript_Sandbox",
+      "Target": "return parseInt(${retryCounter}) + 1",
+      "Value": "retryCounter",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "Attempt ${retryCounter} failed. Retrying...",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "gotoIf_v2",
+      "Target": "${retryCounter} <= ${maxRetries}",
+      "Value": "start",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "Retry limit reached. Exiting.",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "label",
+      "Target": "end",
+      "Value": "",
+      "Description": ""
+    }
+  ]
+}

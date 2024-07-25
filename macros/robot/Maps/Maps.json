@@ -1,0 +1,208 @@
+{
+  "Name": "Maps",
+  "CreationDate": "2024-7-25",
+  "Commands": [
+    {
+      "Command": "store",
+      "Target": "0",
+      "Value": "retryCounter",
+      "Description": ""
+    },
+    {
+      "Command": "store",
+      "Target": "3",
+      "Value": "maxRetries",
+      "Description": ""
+    },
+    {
+      "Command": "onError",
+      "Target": "#goto",
+      "Value": "mycatch",
+      "Description": ""
+    },
+    {
+      "Command": "label",
+      "Target": "start",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "open",
+      "Target": "https://www.google.com/maps",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=searchboxinput",
+      "Value": "KFC 70 ft road",
+      "Targets": [
+        "id=searchboxinput",
+        "name=q",
+        "xpath=//*[@id=\"searchboxinput\"]",
+        "xpath=//input[@id='searchboxinput']",
+        "xpath=//input",
+        "css=#searchboxinput"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=cell0x0",
+      "Value": "",
+      "Targets": [
+        "id=cell0x0",
+        "xpath=//*[@id=\"cell0x0\"]",
+        "xpath=//div[@id='cell0x0']",
+        "xpath=//div/div/div/div[2]/div/div/div/div",
+        "css=#cell0x0"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "css=#QA0Szd button > img[jstcache]",
+      "Value": "",
+      "Targets": [
+        "id=cell0x0",
+        "xpath=//*[@id=\"cell0x0\"]",
+        "xpath=//div[@id='cell0x0']",
+        "xpath=//div/div/div/div[2]/div/div/div/div",
+        "css=#cell0x0"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "comment",
+      "Target": "click // img[jstcache]",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "visualAssert",
+      "Target": "hmynod_dpi_120.png",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XMove",
+      "Target": "i41hdc_dpi_120.png",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XMouseWheel",
+      "Target": "20",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "i41hdc_dpi_120.png",
+      "Value": "#right",
+      "Description": ""
+    },
+    {
+      "Command": "times",
+      "Target": "9",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_DOWN}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "end",
+      "Target": "",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_ENTER}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "qrrfpw_dpi_120.png",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "weu3pv_dpi_120.png",
+      "Value": "#tripleclick",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_CTRL+KEY_C}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "${!clipboard}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "label",
+      "Target": "all_ok",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "All steps completed successfully.",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "gotoLabel",
+      "Target": "end",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "label",
+      "Target": "mycatch",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "executeScript_Sandbox",
+      "Target": "return parseInt(${retryCounter}) + 1",
+      "Value": "retryCounter",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "Attempt ${retryCounter} failed. Retrying...",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "gotoIf_v2",
+      "Target": "${retryCounter} <= ${maxRetries}",
+      "Value": "start",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "Retry limit reached. Exiting.",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "label",
+      "Target": "end",
+      "Value": "",
+      "Description": ""
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "Name": "part3",
+  "CreationDate": "2020-9-11",
+  "Commands": [
+    {
+      "Command": "bringBrowserToForeground",
+      "Target": "",
+      "Value": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=Subject",
+      "Value": "Powershell (filled by 3rd macro)"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "Name": "test",
+  "CreationDate": "2020-9-11",
+  "Commands": [
+    {
+      "Command": "bringBrowserToForeground",
+      "Target": "",
+      "Value": ""
+    },
+    {
+      "Command": "open",
+      "Target": "https://ui.vision/contact",
+      "Value": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=ContactName",
+      "Value": "Hello"
+    }
+  ]
+}

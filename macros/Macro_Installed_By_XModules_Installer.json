@@ -1,0 +1,15 @@
+{
+  "CreationDate": "2021-03-22",
+  "Commands": [
+    {
+      "Command": "open",
+      "Target": "https://ui.vision/",
+      "Value": ""
+    },
+    {
+      "Command": "comment",
+      "Target": "This is just placeholder macro. It was installed by the XModules installer. It can be deleted safely.",
+      "Value": ""
+    }
+  ]
+}
